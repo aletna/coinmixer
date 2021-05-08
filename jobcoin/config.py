@@ -16,6 +16,10 @@ def getAddress(address):
 
 
 def postTransaction(sender, recipient, amount):
+    '''
+        This takes in a sender address, recipient address and amount all as strings
+        and makes a post request to the api to create a transaction using the above parameters.
+    '''
     print('\nPOST TRANSACTION: \n\nFrom: {}\nTo: {}\nAmount: {}'.format(
         sender, recipient, amount))
     data = {
