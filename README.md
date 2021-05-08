@@ -34,7 +34,7 @@ The app is split into the following folders:
 
 ## How it works
 
-![visualization](visualization.png)
+![viz](viz.png)
 
 This mixer waits for multiple users (default 2) to send in transactions in order to shuffle its balance and then 'unload' it accordingly. In a real life scenario one could also add a time limit of several days before the house continues to send out all payments over a range of time.
 
