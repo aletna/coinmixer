@@ -25,7 +25,7 @@ Start the CLI
 python cli.py
 ```
 
-## Approach
+## Structure
 The app is split into the following folders:
 - Main CLI: `/cli.py`
 - API Calls: `/jobcoin/config.py`
@@ -61,7 +61,7 @@ As soon as the house has received deposits from the specified number of users it
 
 
 ## Improvements going forward
-Here are a few thoughts about my current mixer and how I could have improved it.
+Here are a few thoughts about my current mixer and how it can be improved.
 
 - First of all, it would be good to add tests for all functions (both unit and integration tests as many of my functions call on other functions).
 - Some improvements to make it harder to track the transactions:
