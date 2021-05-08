@@ -16,7 +16,8 @@ def getAddress(address):
 
 
 def postTransaction(sender, recipient, amount):
-    print('\nPOST TRANSACTION: \n\nFrom: {}\nTo: {}\nAmount: {}'.format(sender, recipient, amount))
+    print('\nPOST TRANSACTION: \n\nFrom: {}\nTo: {}\nAmount: {}'.format(
+        sender, recipient, amount))
     data = {
         "fromAddress": sender,
         "toAddress": recipient,
@@ -24,12 +25,8 @@ def postTransaction(sender, recipient, amount):
     }
     response = requests.post(API_TRANSACTIONS_URL, data=data)
 
-    # if response.status_code == 200:
-    
     # can return response.status_code of 200 or 422
+    # in both cases, we will pass on the status code and message
     return response.status_code, response.json()
-
-    # if response.status_code == 422:
-    #     return response.status_code, response.json()
 
     return
